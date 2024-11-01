@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Kartı</title>
+    <!-- Tailwind CSS'i dahil etmek için CDN bağlantısı -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <!-- bg-gray-100: Arka plan rengini açık gri (#f7fafc) yapar.
+      Kullanıcı arayüzü öğelerinin arka planını daha yumuşak bir görünüm için kullanılır.
+flex: Öğeyi flexbox modeli yapar. İçeriklerin yatay ve dikey olarak düzenlenmesini sağlar.
+items-center: Flex öğelerini dikey olarak ortalar. Örneğin, öğeler dikey eksende ortalanır.
+justify-center: Flex öğelerini yatay olarak ortalar. Örneğin, öğeler yatay eksende ortalanır.
+min-h-screen: Minimum yüksekliği ekranın tamamı (%100) yapar. Sayfanın içeriğinin ekranın tamamını kaplamasını sağlar. -->
+    <div class="bg-white rounded shadow-lg p-6 max-w-sm">
+        <!-- bg-white: Arka plan rengini beyaz (#ffffff) yapar. Kart veya konteyner öğelerinin daha belirgin olması için kullanılır.
+rounded: Köşeleri yuvarlar (standart bir yarıçapla). Kart veya butonları daha yumuşak bir görünüm için köşeler yuvarlanır.
+shadow-lg: Büyük gölge efekti ekler. Öğeye 3D etkisi verir.
+p-6: Her kenardan 1.5rem (24px) padding (iç boşluk) ekler. Öğenin içeriği ile kenarları arasındaki boşluğu ayarlar.
+max-w-sm: Maksimum genişliği küçük (640px) yapar. Öğenin genişliğini sınırlar. -->
+        <img class="w-24 h-24 rounded-full mx-auto" src="https://via.placeholder.com/150" alt="Profil Resmi">
+        <!-- w-24: Genişliği 6rem (96px) yapar. Resmin genişliğini belirler.
+h-24: Yüksekliği 6rem (96px) yapar. Resmin yüksekliğini belirler.
+rounded-full: Tamamen yuvarlak köşeler yapar (çember şekli). Profil resimleri için idealdir.
+mx-auto: Yatay margin'i otomatik yaparak öğeyi yatay olarak ortalar.-->
+        <h2 class="text-center text-xl font-bold text-gray-700 mt-4">Jane Doe</h2>
+        <!-- text-center: Metni yatay olarak ortalar.
+text-xl: Metin boyutunu 1.25rem (20px) yapar. Başlık veya önemli metinler için kullanılır.
+font-bold: Metni kalın yapar. Vurgulanması gereken metinlerde kullanılır.
+text-gray-700: Metin rengini koyu gri (#4a5568) yapar.
+mt-4: Üstte 1rem (16px) margin (dış boşluk) ekler. Metin ile üst öğe arasındaki boşluğu ayarlar. -->
+        <p class="text-center text-gray-500">Yazılım Geliştirici</p>
+        <!-- mt-4: Üstte 1rem (16px) margin ekler. Düğmeler ile üst öğe arasındaki boşluğu ayarlar.
+flex: Flexbox modelini etkinleştirir.
+justify-center: Flex öğelerini yatay olarak ortalar.
+space-x-4: Yatay olarak yan yana gelen öğeler arasında 1rem (16px) boşluk ekler. -->
+        <div class="mt-4 flex justify-center space-x-4">
+            <!-- Takip et düğmesi -->
+            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Takip Et</a>
+            <!--bg-blue-500: Arka plan rengini mavi (#3b82f6) yapar.
+text-white: Metin rengini beyaz (#ffffff) yapar.
+px-4: Yatay (sağ ve sol) padding'i 1rem (16px) yapar.
+py-2: Dikey (üst ve alt) padding'i 0.5rem (8px) yapar.
+rounded: Köşeleri yuvarlar.
+hover
+: Fareyle üzerine gelindiğinde arka plan rengini daha koyu mavi (#2563eb) yapar. -->
+            <a href="#" class="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400">Mesaj Gönder</a>
+        </div>
+    </div>
+</body>
+</html>
